@@ -355,7 +355,7 @@ Get_Versions(){
 	fi
 }
 Install_Python_Lib(){
-	curl -Ss --connect-timeout 3 -m 60 https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/pip_select.sh|bash
+	curl -Ss --connect-timeout 3 -m 60 https://raw.githubusercontent.com/dasima4396/btpanel-v7.7.0/main/install/pip_select.sh|bash
 	pyenv_path="/www/server/panel"
 	if [ -f $pyenv_path/pyenv/bin/python ];then
 	 	is_ssl=$($python_bin -c "import ssl" 2>&1|grep cannot)
@@ -488,9 +488,9 @@ Install_Bt(){
 		sleep 1
 	fi
 
-	wget -O /etc/init.d/bt https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/src/bt6.init -T 10
-	wget -O /www/server/panel/install/public.sh https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/public.sh -T 10
-	wget -O panel.zip https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/src/panel6.zip -T 10
+	wget -O /etc/init.d/bt https://raw.githubusercontent.com/dasima4396/btpanel-v7.7.0/main/install/src/bt6.init -T 10
+	wget -O /www/server/panel/install/public.sh https://raw.githubusercontent.com/dasima4396/btpanel-v7.7.0/main/install/public.sh -T 10
+	wget -O panel.zip https://raw.githubusercontent.com/dasima4396/btpanel-v7.7.0/main/install/src/panel6.zip -T 10
 
 	if [ -f "${setup_path}/server/panel/data/default.db" ];then
 		if [ -d "/${setup_path}/server/panel/old_data" ];then
