@@ -48,9 +48,9 @@ sed -i "s|if (bind_user == 'REMOVED') {|if (bind_user == 'True') {|g" /www/serve
 ```
 # 其他版本升级或者降级到7.7
 ```bash
-wget
+wget https://raw.githubusercontent.com/dasima4396/btpanel-v7.7.0/main/install/update6.sh
 ```
-
+运行update6.sh。
 # 卸载宝塔
 ```bash
 wget https://github.com/dasima4396/btpanel-v7.7.0/releases/download/download/bt-uninstall.sh
