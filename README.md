@@ -46,3 +46,13 @@ chattr +i /www/server/panel/data/plugin.json
 ```
 sed -i "s|if (bind_user == 'REMOVED') {|if (bind_user == 'True') {|g" /www/server/panel/BTPanel/static/js/index.js
 ```
+# 其他版本升级或者降级到7.7
+```bash
+wget
+```
+
+# 卸载宝塔
+```bash
+wget https://github.com/dasima4396/btpanel-v7.7.0/releases/download/download/bt-uninstall.sh
+```
+运行bt-uninstall.sh即可。
